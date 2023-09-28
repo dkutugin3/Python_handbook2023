@@ -6,10 +6,10 @@ def solution():
     hours = (hours + (minutes + time) // 60) % 24
     minutes = (minutes + time) % 60
 
-    hours = "0" + str(hours)
-    minutes = "0" + str(minutes)
+    hours = str(hours)
+    minutes = str(minutes)
 
-    print(f"{hours[-2::]}:{minutes[-2::]}")
+    print(f"{hours:0>2}:{minutes:0>2}")
 
 
 def main():
